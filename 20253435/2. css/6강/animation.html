@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes textColorAnimation{
+            0% {color: blue;}
+            30% {color : green;} 
+            100%{color : red;}
+        }
+        span{
+            animation-name: textColorAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            font-size: 25px;
+        }
+        @keyframes bomb{
+            from{font-size : 500%;}
+            to { font-size : 100%}
+        }
+        @keyframes bigbomb{
+            from{font-size : 100%;}
+            to { font-size : 500%}
+        }
+        h3{
+            animation-name: bomb;
+            animation-duration: 3s;
+        }
+        h3:hover{
+            animation-name: bigbomb;
+            animation-duration: 3s;
+        }
+        span{
+            transition: font-size 5s;
+        }
+        span:hover{
+            font-size : 500%;
+        }
+    </style>
+</head>
+<body>
+    <span>텍스트</span>
+    <h3>bomb</h3>
+</body>
+</html>
