@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Type</title>
+
+    <style>
+        @media screen and(max-width:767px){
+            body{background-color: red;}
+        }
+        @media screen and(min-width:768px) and(max-width:959px){
+            body{background-color: green;}
+        }
+        @media screen and(min-width:960px){
+            body{background-color: blue;}
+        }
+        @media screen and(orientation: portrait){
+            body{background-color: red;}
+        }
+        @media screen and(orientation: landscape){
+            body{background-color: green;}
+        }
+    </style>
+    <link rel="stylesheet" href="screen.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+    <h1>텍스트</h1>
+    <p>텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트</p>
+</body>
+</html>
