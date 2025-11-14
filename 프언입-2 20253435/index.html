@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleSheet</title>
+    <style>
+        @import url(2.css);
+        /* p{ color : red; font-size: 15px; } */
+        /* import하면서 다른 스타일 적용가능 */
+        p:first-letter{ background: yellow;}
+        p:first-line{background: red; font-size: 20pt;}
+        span:hover{background: green;
+            text-decoration: overline;
+            text-decoration: line-through;
+            text-indent: 0%;
+        }
+        
+    </style>
+    <!--내부 스타일시트 <style></style> -->   
+    <!-- 외부 스타일시트 
+        1. <link type="text/css" rel="stylesheet" href="style.css">
+        2. @import url(2.css);
+    -->
+    <!-- 스타일 적용 우선순위! -->
+
+</head>
+<body>
+    <!-- <p>오페라</p>
+    <p>엘비스</p>
+    <p style="color:blue">장동건</p>
+    <p style="color:magenta;">고소영</p> -->
+    <p>동의대학교 동의대학교 동의대학교 동의대학교 동의대학교 동의대학교 동의대학교 
+
+    </p>
+    <span>동의대학교 동의대학교 동의대학교 동의대학교 동의대학교 동의대학교 동의대학교</span>
+</body>
+</html>
