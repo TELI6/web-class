@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>web form</title>
+</head>
+<body>
+  <form action="1.jsp" method="get">
+    ID: <input type="text" name="ID" maxlength="5" size="3" value="123"><br>
+    PASS: <input type="password" name="pass"><br>
+    내용<br>
+    <textarea cols="30" rows="50" name="content">
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    </textarea><br>
+    지역 : <input type="text" list="ar">
+          <datalist>
+            <option value="부산" />
+            <option value="서울" />
+            <option value="대구" />
+          </datalist>
+        </input><br>
+    짜장면 <input type="checkbox" value="1">
+    짬 뽕 <input type="checkbox" value="2" checked>
+    탕수육 <input type="checkbox" value="3">
+        <br>
+    짜장면 <input type="radio" value="1" name="fo1">
+    짬 뽕 <input type="radio" value="2" name="fo1" checked>
+    탕수육 <input type="radio" value="3" name="fo1">
+    <select name="china">
+      <option value="1">짜장면</option>
+      <option value="2" selected>짬뽕</option>
+      <option value="3">탕수육</option>
+    </select>
+    <input type="color" value="#00FF00" onchange="document.body.style.color=this.value">
+  
+    <input type="month"><br>
+    <input type="week" value="2025-W09"><br>
+    <input type="date"><br>
+    <input type="time"><br>
+    <input type="datetime-local"
+    value="2025-03-01T21:30:10.32"><br>
+    <input type="number" min="0.0" max="100.0" step="5">
+
+    <input type="range" min="10" max="30" list="temp">30&deg;
+    <datalist id="temp">
+      <option value = "12" label="Low"></option>
+      <option value = "20" label="Medium"></option>
+      <option value = "28" label="High"></option>
+    </datalist>
+
+    <fieldset>
+      <legend>부가 정보</legend>
+      <input type="email" placeholder="id@host"><br>
+      <input type="url" placeholder="http://"><br>
+      <input type="tel" placeholder="010-1234-5678"><br>
+    </fieldset>
+    <!-- 웹폼, css 전체 싹다  -->
+  </form>
+</body>
+</html>
