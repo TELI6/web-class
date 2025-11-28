@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let timerID = null;
+        function startTimer(time){
+            timerID = setTimeout("load('http://www.naver.com')", time);
+            document.getElementById('img').title = "타이머 작동 시작...";
+        }
+        function cancelTimer(){
+            if(timerID != null){
+                clearTimeout(timerID);
+            }
+        }
+        function load(url){
+            window.location = url;
+        }
+        // function load(URL){
+        //     newWin = window.open(URL, "myWin", "left=300, top=300, width=400, height=300");
+        // }
+        // function closeNewWindow(){
+        //     if(newWin == null || newWin.closed){
+        //         return;
+        //     }else{
+        //         new Win.close();
+        //     }
+        // }
+    </script>
+</head>
+<body>
+    <img id="img" src="a.gif" onmouseover="startTimer(5000)" onmounseout="cancelTimer()">
+    <a href="javascript:load('http://www.deu.ac.kr')">동의</a><br>
+    <a href="javascript:window.close()">현재 윈도우 닫기</a><br>
+    <a href="javascript:closeNewWindow()">새 윈도우 닫기</a>
+    <!-- 
+    window 브라우저윈도우 모양 제어. 새윈도우 열기/닫기
+    navigator 브라우저에 대한 다양한 정보 제공
+    history 브라우저 윈도우에 로드한 URL 리스트이 히스토리 관리
+    location 브라우저 윈도우에 로드된 HTML 페이지의 URL 관리
+    screen 브라우저가 실행되고있는 스크린 장치에 대한 정보 제공 
+    -->
+    <!-- setinterval(), moveBy(), resize() -->
+</body>
+</html>
